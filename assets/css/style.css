@@ -1,7 +1,9 @@
+/* Google fonts import */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200;300;400;500;600;700&display=swap');
-/*  the asterisk overrides the default styles added by the browser */
+
+/* Asterisk wildcard selector to override default styles added by the browser */
 * {
-    padding: 0; 
+    padding: 0;
     margin: 0;
     /* when setting the height and width of an element, it applies it to everything, 
     including the border  */
@@ -12,16 +14,24 @@ body {
     /*Using min-height will allow it to stretch larger than the height of the 
     screen when there is enough content on the page that the user needs to scroll.*/
     min-height: 100vh;
-
     display: flex;
     flex-direction: column;
     /*Generic project styles */
     color: #3a3a3a;
-    font-family: 'Lato', sans-serif,;
+    font-family: 'Lato', 'sans-serif';
 }
 
 header {
-    background-color: blueviolet;
+    background-color: white;
+    padding: 0 1rem;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    box-shadow: 0 2px 4px #3a3a3a;
+}
+
+h1 {
+    font-family: 'Oswald', 'sans-serif';
 }
 main {
     background-color: orange;
