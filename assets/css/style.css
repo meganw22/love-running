@@ -68,6 +68,7 @@ nav {
     padding: 0 1em;
     box-shadow: 0 2px 4px #3a3a3a;
     display: none;
+    top: 100%;
    
 }
 
@@ -88,6 +89,7 @@ main {
     background-color: orange;
     /* flex; make main element take up any surplus space to push down the footer */
     flex: 1 0 auto;
+    margin-top: 47px;
 }
 
 /*Footer*/
