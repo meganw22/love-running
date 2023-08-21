@@ -9,6 +9,7 @@
     including the border  */
     box-sizing: border-box;
 }
+
 /* Applies styles to the whole sheet*/
 body {
     /*Using min-height will allow it to stretch larger than the height of the 
@@ -21,14 +22,14 @@ body {
     font-family: 'Lato', 'sans-serif';
 }
 
-/*Header*/
+/* Header */
 header {
-    background-color: white;
+    background-color: #ffffff;
     padding: 0 1rem;
     position: fixed;
     z-index: 99;
     width: 100%;
-    box-shadow: 0 2px 4px #3a3a3a;
+    box-shadow: 0 2px 2px #3a3a3a;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
@@ -36,46 +37,47 @@ header {
 
 header a {
     text-decoration: none;
-    color: inherit;    
+    color: inherit;
 }
 
 h1 {
-    font-family: 'Oswald', 'sans-serif';
+    font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #252525;
 }
+
 #menu {
     font-size: 110%;
     letter-spacing: 4px;
     list-style-type: none;
 }
 
-#menu>li {
+menu>li {
     margin-bottom: 1em;
 }
 
 .active {
-    border-bottom: 2px solid #3a3a3a;
+    border-bottom: 1px solid #3a3a3a;
 }
 
-/* nav styles with toggle drop down */
+/* Navbar styles with dropdown toggle */
 nav {
     position: absolute;
-    background-color: white;
+    background-color: #ffffff;
     width: 100%;
-    left:0;
-    padding: 0 1em;
-    box-shadow: 0 2px 4px #3a3a3a;
+    left: 0;
+    padding: 0 1rem;
+    box-shadow: 0 2px 2px #3a3a3a;
     display: none;
     top: 100%;
-   
 }
 
-/* Nav-toggle */
+/* Nav toggle */
 #nav-toggle:checked~nav {
     display: block;
 }
+
 #nav-toggle {
     display: none;
 }
@@ -84,22 +86,22 @@ nav {
     font-size: 2rem;
 }
 
-/* Main Content */
+/* Main content */
 main {
-    background-color: orange;
-    /* flex; make main element take up any surplus space to push down the footer */
+    background-color: lightblue;
+    /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
     margin-top: 47px;
 }
 
-/*Footer*/
-
+/* Footer */
 footer {
-    background-color: aqua;
+    background-color: orange;
 }
 
 /* media query: tablets and larger (768px and up)*/
 @media screen and (min-width:768px) {
+
     /* header */
     nav {
         display: block;
@@ -109,14 +111,36 @@ footer {
         padding-right: 1rem;
 
     }
+
     #menu {
-        display:flex;
+        display: flex;
 
     }
-    #menu > li {
+
+    #menu>li {
         padding: 1rem;
     }
+
     .nav-toggle-label {
         display: none;
+    }
+
+    #logo {
+        font-size: 200%;
+        line-height: 75px;
+        margin: 0 0.5rem;
+    }
+
+    /* Main Content*/
+    main {
+        /* Push main content down to accomodate larger heading */
+        margin-top: 79px;
+    }
+
+}
+/* Large devices (laptops and desktops) */
+@media screen and (min-width:992px) {
+    #menu a:hover {
+        border-bottom: 1px solid #3a3a3a;
     }
 }
