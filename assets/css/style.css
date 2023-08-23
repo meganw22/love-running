@@ -60,9 +60,9 @@ header a {
     list-style-type: none;
 }
 
-menu>li {
+#menu > li {
     margin-bottom: 1em;
-}
+    }
 
 .active {
     border-bottom: 1px solid #3a3a3a;
@@ -297,7 +297,7 @@ main {
     }
 
     #menu>li {
-        padding: 1rem;
+        padding: 0 1rem;
     }
 
     .nav-toggle-label {
