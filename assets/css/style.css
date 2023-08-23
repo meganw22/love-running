@@ -214,6 +214,61 @@ main {
     color: #3a3a3a;
 }
 
+main {
+    flex: 1 0 auto;
+    margin-top: 47px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+/* Form */ 
+#signup {
+    background-image: url(../css/images/signup-image.webp);
+    background-size: cover;
+    background-position: 75%;
+    flex-grow: 1;
+    padding: 20px 10% 0 10%;
+}
+
+#signup-form {
+    color: #ffffff;
+    background-color: rgba(60, 60, 60, 0.6);
+    padding: 30px;
+}
+
+#signup-form>h2 {
+    color: #fafafa;
+    margin-bottom: 20px;
+}
+
+.text-input {
+    background-color: rgba(60, 60, 60, 0.6);
+    color: #ffffff;
+    border: 1px solid #fafafa;
+    margin-top: 5px;
+    height: 25px;
+    margin-bottom: 20px;
+    padding: 0 5px;
+    border-radius: 2px;
+    width: 100%;
+}
+
+.radio-buttons {
+    display:flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.join-button {
+    margin-top: 20px;
+    border-radius: 2px;
+    background-color: #454b1b;
+    color: #fafafa;
+    font-size: 100%;
+    padding: 15px 32px;
+}
+
 /* media query: large mobiles or landscape phones (576px and up)*/
 @media screen and (min-width:576px) { 
     #photos {
@@ -287,7 +342,29 @@ main {
     #photos {
         column-count: 3;
     }
-            
+    
+    /* Form */
+    #signup {
+        background-position: center;
+        position: relative;
+    }
+
+    #signup-form {
+        max-width: 400px;
+        position: absolute;
+        left: 10%;
+        top: 150px;
+    }
+
+    .join-button:hover {
+        background-color: #fafafa;
+        color: #454b1b;
+    }
+
+    .text-input:hover {
+        border-color: #f16c6b;
+    }
+
 }
 
 /* Large devices (laptops and desktops, 992px and up) */
